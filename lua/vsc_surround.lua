@@ -14,7 +14,9 @@ function M.wrap_selected()
   for line in txt:gmatch("[^\n]+") do
     table.insert(tbl, line)
   end
-  print(tbl)
+  for _, line in ipairs(table) do
+    print(line)
+  end
 end
 
 function M.setup()
