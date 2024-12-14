@@ -18,7 +18,9 @@ function M.wrap_selected()
 end
 
 function M.setup()
+  print("TESTING1")
   vim.api.nvim_command("command! -range WrapSelected lua require('vsc_surround').wrap_selected()")
+  print("TESTING2")
 end
 
 return M
